@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  pytunnel:
+    container_name: pytunnel
+    image: defelo/pytunnel
+    build: .
+    restart: always
+    tty: true
+    environment:
+      DOMAIN: 'REPLACE.localtunnel.me'
+      PORT: 8080
+#     DESTINATION: 'localhost'
